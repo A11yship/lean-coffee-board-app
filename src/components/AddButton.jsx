@@ -1,3 +1,7 @@
-export default function AddButton({ children }) {
-  return <button type="button">{children}</button>;
+export default function AddButton({ children, onClick }) {
+  return (
+    <button type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
 }

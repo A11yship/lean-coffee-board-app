@@ -1,4 +1,8 @@
+import { useRouter } from "next/router";
+
 export default function CreatCard() {
+  const router = useRouter();
+
   return (
     <>
       <h1>Creat new Card</h1>
@@ -13,6 +17,9 @@ export default function CreatCard() {
         <label htmlFor="inputAuthor"></label>
         <input type="text" id="inputAuthor" placeholder="Jane Doe" required />
         <button>Submit</button>
+        <button type="button" onClick={() => router.push("/")}>
+          Cancel
+        </button>
       </form>
     </>
   );

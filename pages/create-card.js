@@ -10,6 +10,8 @@ export default function CreatCard() {
           placeholder="I want to talk about ..."
           required
         />
+        <label htmlFor="inputAuthor"></label>
+        <input type="text" id="inputAuthor" placeholder="Jane Doe" required />
         <button>Submit</button>
       </form>
     </>

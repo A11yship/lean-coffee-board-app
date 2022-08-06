@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import AddButton from "../src/components/AddButton";
+import Card from "../src/components/Card";
 
 export default function Home() {
   const router = useRouter();
@@ -17,6 +18,7 @@ export default function Home() {
         <AddButton onClick={() => router.push("/create-card")}>
           Add new Card
         </AddButton>
+        <Card content="Tanzen" author="Hannah"></Card>
       </main>
     </>
   );

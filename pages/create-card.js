@@ -11,12 +11,12 @@ export default function CreatCard() {
     const content = event.target.inputContent.value;
     const author = event.target.inputAuthor.value;
 
-    console.log(JSON.stringify({ content, author }));
-
     await fetchApi("/api/card/create", {
       method: "POST",
       body: JSON.stringify({ content, author }),
     });
+
+    router.push("/");
   }
 
   return (

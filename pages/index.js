@@ -5,7 +5,7 @@ import { getAllCards } from "../src/services/cardService";
 import AddButton from "../src/components/AddButton";
 import Card from "../src/components/Card";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const cards = await getAllCards();
 
   return {
